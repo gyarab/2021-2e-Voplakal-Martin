@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NovyRecept"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/layoutMargin"
+        android:paddingTop="20dp"
+        android:paddingRight="@dimen/layoutMargin">
+
+        <EditText
+            android:id="@+id/nazev_receptu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/Nazev_receptu"
+            android:inputType="text|textCapSentences" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/ingredienceLabel" />
+
+
+        <LinearLayout
+            android:id="@+id/ingrLyout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+
+        <ImageButton
+            android:id="@+id/addIngr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_novyrecept" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/Postup_pripravy" />
+
+        <EditText
+            android:id="@+id/postup_na_pripravu_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|top"
+            android:hint="@string/Postup_hint"
+            android:inputType="textAutoCorrect|textMultiLine" />
+
+        <TextView
+            android:id="@+id/takePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/takePicture" />
+
+        <Button
+            android:id="@+id/takePictureBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/addFotoBtn" />
+
+        <!--  <Button
+              android:id="@+id/button1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="44dp"
+              android:text="Button"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/postup_na_pripravu_text" />-->
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

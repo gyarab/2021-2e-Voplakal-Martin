@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">E-kuchařka</string>
+    <string name="navigation_drawer_open">Open nav drawer</string>
+    <string name="navigation_drawer_close">Close nav drawer</string><!-- tohle tady musí být pro objekt ActionBarDrawerToggle a slouží pro neslyšící-->
+    <string name="Nazev_receptu">Název receptu</string>
+    <string name="Ingredience">např. Mouka 350g</string>
+    <string name="ingredienceLabel">Ingredience</string>
+    <string name="Postup_pripravy">Postup na přípravu</string>
+    <string name="Postup_hint">Jak jídlo připravit? Jak dlouho to zabere?</string>
+    <string name="done">hotovo</string>
+    <string name="upravit">upravit</string>
+    <string name="dialogPrazdnyRecept">Název musí mít alespoň 3 písmena!</string>
+    <string name="emptyName">Zatím tu nejsou žádně recepty</string>
+    <string name="emptyIngredience">Můžeš nějaké přidat...</string>
+    <string name="addFotoBtn">Přidat</string>
+    <string name="dataSaved">Uloženo</string>
+    <string name="takePicture">Obrázky</string>
+    <string name="changesNotSaved">Uložit provedené změny?</string>
+    <string name="yes">Ano</string>
+    <string name="no">Ne</string>
+    <string name="deletePicture">Opravdu chcete smazat tento obrázek?</string>
+    <string name="deleteRecept">Opravdu smazat recept?</string>
+    <string name="share">Sdílet</string>
+    <string name="saveFirst">Nejprve prosím změny uložte.</string>
+    <string name="backup">Zálohování</string>
+    <string name="restoreBackupSummary">Ze serveru budou stáhnuty zálohované recepty. Stav receptů,
+        které byly od poslední zálohy změněny bude obnoven do stavu ze zálohy. Nově přidaných receptů se změna nedotkne.</string>
+
+    <string name="backup_description" >
+Aby bylo možné v budoucnu vaše data obnovit na jakémkoli jiném zařízení, je potřeba provést jejich zálohu.
+Zkopírujte klíč níže a uložte si ho na bezpečné místo, nebo zadejte svůj vlastní. Berte v potaz, že kdokoli, kdo odhadne,
+nebo jinak zjistí váš klíč bude mít přístup k vaší záloze. Na server se neodesílají obrázky přiožené k receptům. Ty zůstávají stále na vašem zažízení.</string>
+
+</resources>
