@@ -1,0 +1,25 @@
+{
+  "name": "receptyserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartinVoplakal/receptyServer.git"
+  },
+  "author": "Martin Voplakal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartinVoplakal/receptyServer/issues"
+  },
+  "homepage": "https://github.com/MartinVoplakal/receptyServer#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "joi": "^17.6.0",
+    "mongodb": "^4.5.0",
+    "nodemon": "^2.0.15"
+  }
+}

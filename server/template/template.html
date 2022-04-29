@@ -1,0 +1,63 @@
+module.exports = o => `
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>${o.nazev}</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='static/main.css'>
+    <!--lightbox     https://lokeshdhakar.com/projects/lightbox2/#getting-started-->
+    <link rel="stylesheet" href="static/lightbox2/css/lightbox.min.css" type="text/css" media="screen" />
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>${o.nazev}</h1>
+    </div>
+    <div class="section">
+        <div class="row">
+            <div class="column left">
+                <div class="ingred">
+                    <h2>Ingredience</h2>
+                    <ul>
+                        ${o.ingredience}
+                    </ul>
+                </div>
+                <div class="share">
+                    <a id="WApp">
+                        <p>Sdílejte přes WhatsApp</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column middle">
+                <div class="postup">
+                    <h2>Postup přípravy</h2>
+                    <p>${o.postup}</p>
+                </div>
+            </div>
+
+            <div class="column right">
+                <div class="images">
+                    ${o.htmlImages}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let links = document.querySelectorAll(".images a")
+        for (let a of links) {
+            let img = a.firstElementChild;
+            a.setAttribute("href", img.getAttribute("src"))
+        }
+        document.getElementById("WApp").setAttribute("href", "https://wa.me/?text=" + window.location.href);
+    </script>
+
+    <script src="static/lightbox2/js/lightbox-plus-jquery.min.js"></script>
+</body>
+
+</html>
+`

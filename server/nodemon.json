@@ -1,0 +1,4 @@
+{
+    "watch": ["index.js", "template/"],
+    "ext": "js, css, html"
+  }
